@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bolder;">
+<head>
+    <script src="./script/searchScript.js"></script>
+    <link rel="stylesheet" href="../certain Css/dialog.css">
+    <link rel="stylesheet" href="./Home.css">
+    <script src="./Home.js"></script>
+    <link rel="shortcut icon" href="../Images/Logos/DH.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DevHub's Movies | Home</title>
+</head>
+<body id="body" style=" background-size: cover; background-position: center; background-attachment:fixed ; background-repeat: no-repeat;  ">
+    <p style="text-align: center;">
+        
+        <br>
+        <img class="logo" src="../Images/Logos/devhubLogo.png" alt="logo" height="150px">
+        <br>
+     
+    </p>
+    
+
+        <div class="container1" id="container1"  style="text-align: center;" >
+            <img src="https://cdn-icons-png.flaticon.com/512/7175/7175356.png" style="margin-left: 8px; margin-top: 5px;" alt="menu" height="30px" onclick="Menu.showModal()">    <img src="https://cdn-icons-png.flaticon.com/128/3095/3095583.png" style="margin-top: 0px;" height="45px" alt="contactMeTab?" onclick="contactTab.showModal()">  <img src="https://cdn-icons-png.flaticon.com/128/12301/12301351.png" alt="lightModes?" onclick="Menu.showModal() " height="50px"> <img src="https://cdn-icons-png.flaticon.com/128/5968/5968898.png" alt="discordServer" onclick="discordRedirect.showModal()" height="45px">
+        </div>
+    
+
+      
+
+
+    <p style="text-align: center;">
+        <input id="searchBar"  placeholder="Search Movies here..." type="text" class="btn2"><button class="btn2" style="padding: 18px;" onclick="search()"><img class="search-img" src="https://cdn-icons-png.flaticon.com/128/3031/3031293.png" alt="search" height="20px"></button>
+    </p>
+<div class="containerMain" id="containerMain" style="text-align: center;">
+    <p style="text-align: center;">
+        <p style="text-align: center;">
+            <div class="container">
+                <p tyle="text-align: center; margin: 20px;" class="cover" >
+                    <img alt="SR" height="150px" onclick="SR.showModal()" src="../Images/ShawshankRedemptionMoviePoster.jpg" >
+                    <br>
+                    
+                    The Shawshank <br> Redemption
+                </p>
+            </div>
+        </p>
+        <p tyle="text-align: center; margin: 20px;">
+            <div class="container">
+                <p style="text-align: center; margin: 20px;" class="cover" >
+                    <img alt="MOANA" height="150px" onclick="MOANA.showModal()" src="../Images/moana-18147.webp" >
+                    <br>
+                    
+                    Moana 2016
+                </p>
+            </div>
+        </p>
+        <p style="text-align: center; margin: 20px;">
+            <div class="container">
+                <p tyle="text-align: center; margin: 20px;" class="cover" >
+                    <img alt="SAW" height="150x" onclick="SAW.showModal()" src="../Images/Saw.jpg" >
+                    <br>
+                    
+                    Saw 2004
+                </p>
+            </div>
+        </p>
+        <p style="text-align: center; margin: 20px;">
+            <div class="container">
+                <p tyle="text-align: center; margin: 20px;" class="cover" >
+                    <img alt="She's Too Young" height="150px" onclick="STY.showModal()" src="../Images/she-s-too-young-1630858080.webp" >
+                    <br>
+                    
+                    She's Too Young
+                </p>
+            </div>
+        </p>
+       
+    
+        <p style="text-align: center;color: white; " class="void">
+            You Have Reached the point of Void ! <br>
+            
+             DevHub
+             <br>
+             
+        </p>
+    
+    </p>
+    
+</div>    
+        <!-- Menu -->
+    <dialog id="Menu" class="dialog">
+        <button class="btn" style="background-color: red;" onclick="Menu.close()">Exit</button>
+        <br>
+        <br>
+        <br>
+        <a href="./Info/Info.html">
+            <button class="btn"> Info </button>
+        </a>
+        <br>
+        <br>
+        <button class="btn" onclick="darkMode()">DarkMode ?</button>
+        <br>
+        <br>
+        More Options will be added in the future.
+    </dialog>
+    <!-- Menu -->
+     <!-- suggections -->
+    <dialog id="contactTab" class="dialog">
+        <button class="btn" style="background-color: red;" onclick="contactTab.close()">Exit</button> <br>
+        <br>
+        <p style="text-align: center;"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" alt="discord_png?" height="50px"> </p> <br> Suggestions ? A movies you want to add ? DM me ! discord username: devhub1  / nickname : Proffesional Black Man
+    </dialog>
+    <!-- suggestion -->
+     <!-- not found -->
+    <dialog id="NotFound" class="dialog">
+      <button class="btn" style="background-color: red;" onclick="NotFound.close()">
+        Exit
+      </button> <br>
+      <br>
+      <p style="text-align: center;" id="notfoundtext">
+        It Did not find anything about "", watch out for typos ! <br> 
+        <img src="https://cdn-icons-png.flaticon.com/128/5058/5058046.png" alt="Nothing Found?" height="100px">
+      </p>
+    </dialog>
+    <!-- not found -->
+     <!-- discord redirect -->
+     <dialog class="dialog" id="discordRedirect">
+        <button class="btn" style="background-color: red;" onclick="discordRedirect.close()">Exit</button>
+        <br>
+       
+        <br>
+        <p style="text-align: center; font-size: xx-large;">
+            Join The Discord Server !
+        </p>
+            <br>
+            <p style="text-align: center;">
+
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968898.png" alt="The The_Shawshank_Redemption">
+
+            </p>
+            
+            <br>
+            Its a discord server i made recently to gather DevHub's Movies community togheter :) ! 
+        <br>
+        <br>
+        <a href="https://www.youtube.com/@VeryTastyChips" target="_blank">
+            <button class="btn" >Join The Discord Server</button>
+        </a>
+    </dialog>
+    <dialog class="dialog" id="MOANA">
+        <button class="btn" style="background-color: red;" onclick="MOANA.close()">Exit</button>
+        <br>
+        Moana 2016
+        <br>
+        <p style="text-align: center; font-size: xx-large;">
+            IMDb rating : 7.6/10 Solid !
+        </p>
+            <br>
+            <img src="../Images/moana-18147.webp" alt="moana">
+            <br>
+            In ancient Polynesia, when a terrible curse incurred by the demigod Maui reaches Moana's island, she answers the Ocean's call to seek out Maui to set things right.
+        <br>
+        <br>
+        <a href="https://www.mediafire.com/file/flvy1m6debirs2l/Moana_2016_CrunchyCrack.mp4/file" target="_blank">
+            <button class="btn" >Dowonload Moana 2016</button>
+        </a>
+    </dialog>
+      <!-- discord redirect -->
+    <dialog class="dialog" id="SR">
+        <button class="btn" style="background-color: red;" onclick="SR.close()">Exit</button>
+        <br>
+        The Shawshank Redemption
+        <br>
+        <p style="text-align: center; font-size: xx-large;">
+            IMDb rating : 9.3/10 ! Incredible
+        </p>
+            <br>
+            <img src="../Images/ShawshankRedemptionMoviePoster.jpg" alt="The The_Shawshank_Redemption">
+            <br>
+            The Shawshank Redemption is a 1994 American prison drama film written and directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank Redemption. The film tells the story of banker Andy Dufresne (Tim Robbins), who is sentenced to life in Shawshank State Penitentiary for the murders of his wife and her lover, despite his claims of innocence. Over the following two decades, he befriends a fellow prisoner, contraband smuggler Ellis "Red" Redding (Morgan Freeman), and becomes instrumental in a money laundering operation led by the prison warden Samuel Norton (Bob Gunton). William Sadler, Clancy Brown, Gil Bellows, and James Whitmore appear in supporting roles.
+        <br>
+        <br>
+        <a href="https://www.mediafire.com/file/wfqtt03ovmvlgo0/The_Shawshank_Redemption_CrunchyCrack.mp4/file" target="_blank">
+            <button class="btn" >Dowonload The Shawshank Redemption</button>
+        </a>
+    </dialog>
+    <dialog class="dialog" id="STY">
+        <button class="btn" style="background-color: red;" onclick="STY.close()">Exit</button>
+        <br>
+        She's Too Young
+        <br>
+        <p style="text-align: center; font-size: xx-large;">
+            IMDb rating : 5.8/10 ! Good !
+        </p>
+            <br>
+            <img src="../Images/she-s-too-young-1630858080.webp" alt="The The_Shawshank_Redemption">
+            <br>
+            Halifax is hit with an outbreak of STDs among high-school students. Among them is Hannah Vogel, and her horrified mother tries to find out why this is happening.
+        <br>
+        <br>
+        <a href="https://www.mediafire.com/file/74f159til8oybp5/She%2527s_Too_Young_DevHub.mp4/file" target="_blank">
+            <button class="btn" >Dowonload She's too young</button>
+        </a>
+    </dialog>
+    <dialog class="dialog" id="MOANA">
+        <button class="btn" style="background-color: red;" onclick="MOANA.close()">Exit</button>
+        <br>
+        Moana 2016
+        <br>
+        <p style="text-align: center; font-size: xx-large;">
+            IMDb rating : 7.6/10 Solid !
+        </p>
+            <br>
+            <img src="../Images/moana-18147.webp" alt="moana">
+            <br>
+            In ancient Polynesia, when a terrible curse incurred by the demigod Maui reaches Moana's island, she answers the Ocean's call to seek out Maui to set things right.
+        <br>
+        <br>
+        <a href="https://www.mediafire.com/file/flvy1m6debirs2l/Moana_2016_CrunchyCrack.mp4/file" target="_blank">
+            <button class="btn" >Dowonload Moana 2016</button>
+        </a>
+    </dialog>
+    <dialog class="dialog" id="SAW">
+        <button class="btn" style="background-color: red;" onclick="SAW.close()">Exit</button>
+        <br>
+        SAW 2004
+        <br>
+        <p style="text-align: center; font-size: xx-large;">
+            IMDb rating : 7.6/10 Solid !
+        </p>
+            <br>
+            <img src="../Images/Saw.jpg" alt="Saw1">
+            <br>
+            Two men awaken to find themselves on the opposite sides of a dead body, each with specific instructions to kill the other or face consequences. These two are the latest victims of the Jigsaw Killer.
+        <br>
+        <br>
+        <a href="https://www.mediafire.com/file/pa6eja87dxwi3i9/SAW_DevHub.mp4/file" target="_blank">
+            <button class="btn" >Dowonload Saw 2004</button>
+        </a>
+    </dialog>
+</body>
+</html>
